@@ -1,0 +1,50 @@
+@use './assets/scss/index.scss' as *;
+
+:root {
+  --background: #e5e3dc;
+  --foreground: #dad7cd;
+  --danger: #f36363;
+  --success: #35c220;
+  --white: #ffffff;
+
+  --yellow: #f6c649;
+  --light-yellow: #fce48c;
+
+  --brown: #824c08;
+
+  --white-72: #ffffffb8;
+
+  --red-64: #bc978c;
+
+  --grey-37: #625b5a;
+
+  --beige-700: #715e28;
+
+  --black-7: #00000012;
+  --black-16: #00000029;
+
+  --orange-66: #b4aa9b;
+  --orange-82: #dad3ca;
+
+  --neutral-400: #888888;
+  --neutral-950: #000000;
+
+  --brown-500: #b19879;
+  --brown-800: #403426;
+
+  --brand-50: #faf5eb;
+  --brand-100: #f5ead6;
+  --brand-300: #e1c084;
+  --brand-800: #523c14;
+  --brand-900: #291e0a;
+
+  --gray-200: #ebecf0;
+  --gray-300: #dddfe4;
+  --gray-400: #c3c6cc;
+  --gray-500: #afb3bb;
+  --gray-600: #8c929c;
+  --gray-700: #5b616d;
+  --gray-800: #414651;
+  --gray-900: #222732;
+  --gray-950: #0a0c11;
+}
