@@ -1,0 +1,5 @@
+export { default as HomePage } from '~/pages/home'
+export { default as AboutPage } from '~/pages/about'
+export { default as ServicesPage } from '~/pages/services'
+export { default as NewsPage } from '~/pages/news'
+export { default as ContactPage } from '~/pages/contact'

@@ -1,0 +1,118 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: all 0.3s ease;
+  &.header-scroll {
+    background: var(--brown-800);
+    .header__top {
+      display: none;
+    }
+    .header__bottom {
+      justify-content: space-between;
+      padding-block: 24px;
+      .header__logo,
+      .header__action {
+        display: flex;
+      }
+      .header__menu {
+        .menu-item {
+          padding-bottom: 10px;
+          &.active {
+            border-bottom: 1px solid var(--brand-300);
+          }
+        }
+      }
+    }
+  }
+  &__top {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-block: 24px;
+    margin-bottom: 12px;
+    .header__logo {
+      display: flex;
+      .svg-wrapper {
+        width: 206px;
+        height: 80px;
+      }
+    }
+    .header__lang,
+    .header__cart {
+      flex: 1;
+    }
+    .header__cart {
+      text-align: end;
+    }
+  }
+  &__bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    .header__logo {
+      display: none;
+      .svg-wrapper {
+        width: 186px;
+        height: 60px;
+      }
+    }
+    .header__action {
+      display: none;
+      align-items: center;
+      gap: 56px;
+      .header__cart {
+        &-button {
+          color: var(--brown);
+          background: var(--light-yellow);
+        }
+        &-count {
+          color: var(--white);
+          background: var(--brown);
+        }
+      }
+    }
+  }
+
+  &__lang {
+    line-height: 1.5;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  &__cart {
+    &-count {
+      width: 24px;
+      height: 24px;
+      color: var(--brown);
+      background: var(--background);
+      border-radius: 50%;
+    }
+  }
+
+  &__menu {
+    .list-menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 62px;
+      .menu-item {
+        display: inline-block;
+        &.active {
+          .menu-link {
+            color: var(--brand-300);
+            font-weight: 500;
+          }
+        }
+        .menu-link {
+          font-size: 20px;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.hero {
+  position: relative;
+  z-index: 2;
+  &__image {
+    width: 100%;
+    object-fit: cover;
+    max-height: 600px;
+  }
+  &__overlay {
+    position: absolute;
+    inset: 0;
+    background: #28262659;
+  }
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--heading-color);
+    font-size: 128px;
+    font-weight: 400;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgba(82, 60, 20, 1) 0%, rgba(82, 60, 20, 0) 100%);
+  }
+}

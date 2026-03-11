@@ -3,12 +3,12 @@ import { Hero } from '~/components'
 
 const { hero_banner } = images
 
-const HomePage = () => {
+const ContactPage = () => {
   return (
     <div>
-      <Hero title='Trang chủ' banner={hero_banner} />
+      <Hero title='Liên Hệ' banner={hero_banner} />
     </div>
   )
 }
 
-export default HomePage
+export default ContactPage

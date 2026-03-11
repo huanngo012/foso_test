@@ -84,15 +84,18 @@ button {
   text-decoration: none;
   padding: 12px 20px;
   cursor: pointer;
+  color: var(--button-color);
+  background: var(--button-background);
 }
 
-.button--primary {
-  color: var(--background);
-  background: var(--brown);
+.button:hover {
+  color: var(--button-color-hover);
+  background: var(--button-background-hover);
 }
+
 .button--secondary {
-  color: var(--brown);
-  background: var(--white);
+  --button-color: var(--brown);
+  --button-background: var(--white);
 }
 
 .container {
