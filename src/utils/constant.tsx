@@ -5,3 +5,8 @@ export const PATHS = {
   NEWS: '/news',
   CONTACT: '/contact'
 }
+
+export const CART_STEPS = {
+  CART: 1,
+  BOOKING: 2
+}

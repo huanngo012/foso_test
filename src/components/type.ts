@@ -1,8 +1,3 @@
-export interface CartProps {
-  open: boolean
-  onClose: () => void
-}
-
 export interface HeroProps {
   title: string
   banner: string
@@ -32,9 +27,12 @@ export interface TestimonialsProps {
 }
 
 export type ServiceItem = {
+  id: number
   title: string
+  image: string
   description: string
-  price: string
+  price: number
+  time?: string
 }
 
 export type Service = {

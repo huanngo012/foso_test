@@ -13,12 +13,12 @@ const Footer = () => {
       </div>
       <div className='container'>
         <div className='footer__top'>
-          <div className='footer__left'>
+          <div className='footer__top-left'>
             <div className='footer__logo svg-wrapper'>
               <LogoFooter />
             </div>
           </div>
-          <div className='footer__right'>
+          <div className='footer__top-right'>
             <div className='footer__sitemap'>
               <div className='footer__heading'>
                 <div className='dot-wrapper'>

@@ -1,16 +1,15 @@
+import { forwardRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { PATHS } from '~/utils/constant'
 import HeaderCart from './HeaderCart'
 import { icons } from '~/assets'
 import { menus } from '~/data'
 import HeaderLanguage from './HeaderLanguage'
-import { forwardRef } from 'react'
 
 const { LogoOnScrll } = icons
 
 const HeaderBottom = forwardRef<HTMLDivElement>((_, ref) => {
   const { pathname } = useLocation()
-  console.log(pathname)
   return (
     <div ref={ref} className='header__bottom'>
       <div className='header__logo'>

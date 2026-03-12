@@ -64,19 +64,19 @@ $-keyframes: -30px;
   animation-timeline: view();
   animation-range: entry 50% 100%;
   &--fade-top {
-    animation: fade-top $animation-duration ease-in;
+    animation: fade-top $animation-duration ease;
   }
   &--fade-right {
-    animation: fade-right $animation-duration ease-in;
+    animation: fade-right $animation-duration ease;
   }
   &--fade-bottom {
-    animation: fade-bottom $animation-duration ease-in;
+    animation: fade-bottom $animation-duration ease;
   }
   &--fade-left {
-    animation: fade-left $animation-duration ease-in;
+    animation: fade-left $animation-duration ease;
   }
   &--fade-in {
-    animation: fade-in $animation-duration ease-in;
+    animation: fade-in $animation-duration ease;
   }
 }
 

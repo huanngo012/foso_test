@@ -39,6 +39,7 @@ body:has(.cart-wrapper--open) {
     will-change: transform;
     transition: transform 0.3s ease;
     max-height: calc(100vh - var(--header-height));
+    text-align: left;
     .cart__header {
       padding-block: 18px;
       border-bottom: 1px solid var(--black-7);
@@ -53,6 +54,8 @@ body:has(.cart-wrapper--open) {
     .cart__list {
       flex: 1;
       overflow-y: auto;
+      scrollbar-color: var(--gray-900) #d9d9d9;
+      scrollbar-width: thin;
       .cart-item {
         .cart-item__main {
           padding: 12px;
@@ -66,7 +69,7 @@ body:has(.cart-wrapper--open) {
             flex-direction: column;
             gap: 12px;
             flex: 1;
-            padding: 16px;
+            padding: 16px 0 16px 16px;
             .cart-item__header {
               display: flex;
               justify-content: space-between;
@@ -143,6 +146,10 @@ body:has(.cart-wrapper--open) {
                 border: 1px solid var(--grey-37);
                 padding: 8px 12px;
                 color: var(--grey-37);
+                .disabled {
+                  color: var(--foreground);
+                  cursor: auto;
+                }
                 .svg-wrapper {
                   width: 20px;
                   height: 20px;
@@ -221,6 +228,7 @@ body:has(.cart-wrapper--open) {
         width: 100%;
         justify-content: space-between;
         margin-top: 24px;
+        color: var(--brand-50);
       }
     }
     .booking {
@@ -245,7 +253,7 @@ body:has(.cart-wrapper--open) {
       }
       &__value {
         font-weight: 500;
-        line-height: 120%;
+        line-height: 1.2;
         color: var(--gray-900);
       }
       &__date {
@@ -280,7 +288,7 @@ body:has(.cart-wrapper--open) {
         &-item {
           display: flex;
           flex-direction: column;
-          padding: 9px 25px;
+          padding-block: 9px;
           background: var(--background);
           text-align: center;
           color: var(--brand-900);
@@ -288,8 +296,9 @@ body:has(.cart-wrapper--open) {
           cursor: pointer;
           &.disabled {
             color: var(--gray-600);
+            cursor: auto;
           }
-          &.primary {
+          &.active {
             background: var(--yellow);
           }
         }
@@ -315,7 +324,7 @@ body:has(.cart-wrapper--open) {
         &-item {
           display: flex;
           flex-direction: column;
-          padding: 9px 25px;
+          padding-block: 9px;
           background: var(--background);
           text-align: center;
           color: var(--brand-900);
@@ -323,8 +332,9 @@ body:has(.cart-wrapper--open) {
           cursor: pointer;
           &.disabled {
             color: var(--gray-600);
+            cursor: auto;
           }
-          &.primary {
+          &.active {
             background: #b97951;
             color: var(--white);
           }

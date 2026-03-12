@@ -25,10 +25,6 @@ body {
   letter-spacing: 0;
 }
 
-div {
-  scroll-margin-top: 80px;
-}
-
 ul,
 li {
   list-style: none;
@@ -68,7 +64,10 @@ button {
   appearance: none;
   background: transparent;
 }
-
+button[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
 .button {
   display: inline-flex;
   justify-content: center;
