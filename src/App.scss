@@ -55,3 +55,78 @@
   --gray-900: #222732;
   --gray-950: #0a0c11;
 }
+
+$animation-duration: 0.6s;
+$keyframes: 30px;
+$-keyframes: -30px;
+
+.animate {
+  animation-timeline: view();
+  animation-range: entry 50% 100%;
+  &--fade-top {
+    animation: fade-top $animation-duration ease-in;
+  }
+  &--fade-right {
+    animation: fade-right $animation-duration ease-in;
+  }
+  &--fade-bottom {
+    animation: fade-bottom $animation-duration ease-in;
+  }
+  &--fade-left {
+    animation: fade-left $animation-duration ease-in;
+  }
+  &--fade-in {
+    animation: fade-in $animation-duration ease-in;
+  }
+}
+
+@keyframes fade-top {
+  0% {
+    transform: translateY($-keyframes);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-right {
+  0% {
+    transform: translateX($keyframes);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-bottom {
+  0% {
+    transform: translateY($keyframes);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-left {
+  0% {
+    transform: translateX($-keyframes);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

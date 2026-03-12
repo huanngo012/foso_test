@@ -6,10 +6,8 @@ const Hero = ({ title, banner }: HeroProps) => {
     <section className='hero'>
       <div className='hero__banner'>
         <img className='hero__image' src={banner} alt={title} />
-        <div className='hero__overlay'></div>
       </div>
-
-      <div className='container'>
+      <div className='container animate animate--fade-in'>
         <h1 className='hero__title'>{title}</h1>
       </div>
     </section>

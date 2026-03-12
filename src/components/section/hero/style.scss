@@ -1,15 +1,17 @@
 .hero {
   position: relative;
   z-index: 2;
+  &__banner {
+    &::after {
+      position: absolute;
+      inset: 0;
+      background: #28262659;
+    }
+  }
   &__image {
     width: 100%;
     object-fit: cover;
     max-height: 600px;
-  }
-  &__overlay {
-    position: absolute;
-    inset: 0;
-    background: #28262659;
   }
   &__title {
     position: absolute;

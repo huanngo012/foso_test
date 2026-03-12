@@ -296,11 +296,11 @@ body:has(.cart-wrapper--open) {
         &-day {
           font-weight: 600;
           font-size: 14px;
-          line-height: 150%;
+          line-height: 1.5;
         }
         &-value {
           font-size: 10px;
-          line-height: 150%;
+          line-height: 1.5;
         }
       }
       &__time {
@@ -332,11 +332,11 @@ body:has(.cart-wrapper--open) {
         &-hour {
           font-weight: 600;
           font-size: 14px;
-          line-height: 150%;
+          line-height: 1.5;
         }
         &-period {
           font-size: 10px;
-          line-height: 150%;
+          line-height: 1.5;
         }
       }
     }
@@ -378,7 +378,7 @@ body:has(.cart-wrapper--open) {
   &__title {
     font-weight: 400;
     font-size: 40px;
-    line-height: 100%;
+    line-height: 1;
     letter-spacing: 1%;
     text-transform: capitalize;
     color: var(--gray-900);

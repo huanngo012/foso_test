@@ -1,0 +1,145 @@
+.testimonials {
+  position: relative;
+  padding-block: 96px;
+  overflow: hidden;
+  .container {
+    padding-inline: 48px;
+  }
+  &__banner {
+    position: absolute;
+    inset: 0;
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(175.08deg, rgba(129, 105, 75, 0.2) 3.96%, #614f38 78.5%);
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+  }
+
+  &__title {
+    font-family: 'Libre Franklin';
+    position: relative;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 128px;
+    letter-spacing: 20%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 96px;
+    &-highlight {
+      font-family: 'MT Dalat Sans';
+      font-size: 128px;
+      letter-spacing: 0;
+      text-transform: capitalize;
+    }
+  }
+  &__slider {
+    .swiper-wrapper {
+      align-items: end;
+    }
+    .swiper-slide {
+      width: calc((696 / 1824) * 100%);
+      transform: scale(calc(498 / 696));
+      transition: transform 0.3s ease;
+    }
+    .swiper-slide-active {
+      transform: scale(1);
+      .testimonials__card-desc {
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+      }
+    }
+    .swiper-slide-prev {
+      transform-origin: right bottom;
+    }
+    .swiper-slide-next {
+      transform-origin: left bottom;
+    }
+    .swiper-pagination {
+      --swiper-pagination-bullet-size: 48px;
+      --swiper-pagination-bullet-horizontal-gap: 0px;
+      --swiper-pagination-color: transparent;
+      --swiper-pagination-bullet-inactive-color: transparent;
+      --swiper-pagination-bullet-inactive-opacity: 1;
+      position: unset;
+      margin-top: 48px;
+      .swiper-pagination-bullet {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+        &::after {
+          content: '';
+          display: block;
+          width: 12px;
+          height: 12px;
+          background: var(--orange-82);
+          border-radius: 50%;
+        }
+      }
+      .swiper-pagination-bullet-active {
+        border: 1px solid var(--orange-82);
+      }
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    transform-origin: bottom center;
+    &-media {
+      position: relative;
+    }
+    &-quote {
+      position: absolute;
+      bottom: -36px;
+      right: 8.5px;
+      width: 68px;
+      height: 52px;
+    }
+    &-image {
+      aspect-ratio: 3 / 4;
+    }
+    &-user {
+      display: flex;
+      gap: 24px;
+    }
+    &-avatar {
+      width: 96px;
+      height: 96px;
+      border-radius: 50%;
+    }
+    &-info {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      flex: 1;
+    }
+    &-name {
+      font-weight: 700;
+      font-size: 48px;
+    }
+    &-desc {
+      font-size: 28px;
+      line-height: 48px;
+      font-weight: 400;
+    }
+    &-see-more {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 48px;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      text-decoration-thickness: 0%;
+      color: var(--red-64);
+      cursor: pointer;
+    }
+  }
+}

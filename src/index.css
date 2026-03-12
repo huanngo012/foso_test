@@ -65,13 +65,8 @@ h6 {
 button {
   font-family: inherit;
   border: 0;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0;
   appearance: none;
   background: transparent;
-  transition: all 0.3s;
 }
 
 .button {
@@ -84,8 +79,13 @@ button {
   text-decoration: none;
   padding: 12px 20px;
   cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0;
   color: var(--button-color);
   background: var(--button-background);
+  transition: all 0.3s;
 }
 
 .button:hover {
