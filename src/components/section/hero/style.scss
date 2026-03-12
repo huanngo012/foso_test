@@ -3,6 +3,7 @@
   z-index: 2;
   &__banner {
     &::after {
+      content: '';
       position: absolute;
       inset: 0;
       background: #28262659;
